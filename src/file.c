@@ -6,7 +6,10 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-#include "constants.c"
+// #include "constants.c"
+
+#include "../include/file.h"
+#include "../include/common.h"
 
 int create_db_file(char *filename) {
     int fd = open(filename, O_RDWR);
